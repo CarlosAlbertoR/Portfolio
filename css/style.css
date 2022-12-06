@@ -38,6 +38,10 @@ body {
   padding: 0 30px;
 }
 
+.hidden {
+  display: none !important;
+}
+
 .main-content {
   padding-left: 270px;
 }
@@ -51,6 +55,45 @@ body {
   margin: auto;
   min-width: 1100px;
   width: 100%;
+}
+
+.section .container {
+  padding-bottom: 70px;
+  padding-top: 60px;
+}
+
+.section-title {
+  flex: 0 0 100%;
+  margin-bottom: 60px;
+  max-width: 100%;
+}
+
+.section-title h2 {
+  color: var(--text-black-900);
+  font-size: 40px;
+  font-weight: 700;
+  position: relative;
+}
+
+.section-title h2::before {
+  background-color: var(--skin-color);
+  content: "";
+  height: 4px;
+  left: 0;
+  position: absolute;
+  top: 100%;
+  width: 50px;
+}
+
+.section-title h2::after {
+  background-color: var(--skin-color);
+  content: "";
+  height: 4px;
+  left: 0;
+  margin-top: 8px;
+  position: absolute;
+  top: 100%;
+  width: 25px;
 }
 
 .row {
@@ -76,6 +119,10 @@ body {
 
 .btn:hover {
   transform: scale(1.05);
+}
+
+.shadow-dark {
+  box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
 
 /* Aside */
@@ -278,4 +325,197 @@ h3.my-profession {
   border-radius: 5px;
   height: 400px;
   margin: auto;
+}
+
+/* About */
+.about .about-content {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.about .about-content .about-text {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.about .about-content .about-text h3 {
+  color: var(--text-black-900);
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.about .about-content .about-text h3 span {
+  color: var(--skin-color);
+}
+
+.about .about-content .about-text p {
+  color: var(--text-black-700);
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.about .about-content .personal-info {
+  flex: 0 0 60%;
+  margin-top: 40px;
+  max-width: 60%;
+}
+
+.about .about-content .personal-info .info-item {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.about .about-content .personal-info .info-item p {
+  border-bottom: 1px solid var(--bg-black-50);
+  color: var(--text-black-900);
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 0;
+}
+
+.about .about-content .personal-info .info-item p span {
+  color: var(--text-black-700);
+  display: inline-block;
+  font-weight: 400;
+  margin-left: 4px;
+}
+
+.about .about-content .personal-info .buttons {
+  margin-top: 30px;
+}
+
+.about .about-content .personal-info .buttons .btn {
+  margin-right: 15px;
+  margin-top: 10px;
+}
+
+.about .about-content .skills {
+  flex: 0 0 40%;
+  margin-top: 40px;
+  max-width: 40%;
+}
+
+.about .about-content .skills .skill-item {
+  flex: 0 0 100%;
+  margin-bottom: 25px;
+  max-width: 100%;
+}
+
+.about .about-content .skills .skill-item h5 {
+  color: var(--text-black-900);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 40px;
+  text-transform: capitalize;
+}
+
+.about .about-content .skills .skill-item .progress {
+  background-color: var(--bg-black-50);
+  border-radius: 4px;
+  height: 7px;
+  position: relative;
+  width: 100%;
+}
+
+.about .about-content .skills .skill-item .progress .progress-in {
+  background-color: var(--skin-color);
+  border-radius: 4px;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.about .about-content .skills .skill-item .skill-percent {
+  color: var(--text-black-900);
+  font-weight: 400;
+  line-height: 40px;
+  position: absolute;
+  right: 0;
+  top: -40px;
+}
+
+.about .about-content .education,
+.about .about-content .experience {
+  flex: 0 0 50%;
+  margin-top: 30px;
+  max-width: 50%;
+}
+
+.about .about-content h3.title {
+  color: var(--text-black-900);
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.about .about-content .timeline-box {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.about .about-content .timeline {
+  background-color: var(--bg-black-100);
+  border: 1px solid var(--bg-black-50);
+  border-radius: 10px;
+  padding: 30px 15px;
+  position: relative;
+  width: 100%;
+}
+
+.about .about-content .timeline .timeline-item {
+  padding-bottom: 50px;
+  padding-left: 37px;
+  position: relative;
+}
+
+.about .about-content .timeline .timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.about .about-content .timeline .timeline-item::before {
+  background-color: var(--skin-color);
+  content: "";
+  height: 100%;
+  left: 7px;
+  position: absolute;
+  top: 0;
+  width: 1px;
+}
+
+.about .about-content .timeline .circle-dot {
+  background-color: var(--skin-color);
+  border-radius: 50%;
+  height: 15px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 15px;
+}
+
+.about .about-content .timeline .timeline-date {
+  color: var(--text-black-700);
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+
+.about .about-content .timeline .timeline-date .fa {
+  margin-right: 5px;
+}
+
+.about .about-content .timeline .timeline-title {
+  color: var(--text-black-900);
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  text-transform: capitalize;
+}
+
+.about .about-content .timeline .timeline-text {
+  color: var(--text-black-700);
+  font-size: 16px;
+  line-height: 25px;
+  text-align: justify;
 }
